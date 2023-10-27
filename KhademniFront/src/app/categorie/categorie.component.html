@@ -1,0 +1,41 @@
+<div class="main4 mt-3 text-center">
+    <h2 >Découvrez nos services!</h2>
+    
+    <br> <div class="next1"><br><br>
+    <p >Garde d'enfants</p>
+   <div class="row">
+    <div class="col-sm-4" *ngFor="let service1 of services1">
+      <div class="card">
+        <div class="card-body">
+   
+          <img src="{{service1.image}}" class="img-fluid" alt=""  class="d-block"  width="240" height="120"><br>
+         <a >{{service1.name}}</a>
+        </div>
+      </div>
+    </div>
+    <div class="next2"><br><br>
+    <p >Aide a domicile pour les personnes agees</p>
+   <div class="row">
+    <div class="col-sm-4" *ngFor="let service2 of services2">
+      <div class="card">
+        <div class="card-body">
+   
+          <img src="{{service2.image}}" class="img-fluid" alt=""  class="d-block"  width="240" height="120"><br>
+         <a >{{service2.name}}</a>
+        </div>
+      </div>
+    </div>
+    <div class="next1"><br><br>
+    <p >Brcolage-petits travaux</p>
+    
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let service3 of services3">
+        <div class="card">
+          <div class="card-body">
+    
+            <img src="{{service3.image}}" class="img-fluid" alt=""  class="d-block"  width="240" height="120"><br>
+           <a>{{service3.name}}</a>
+          </div>
+        </div>
+      </div>
+      </div></div></div>

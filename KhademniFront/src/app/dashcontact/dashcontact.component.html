@@ -1,0 +1,66 @@
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="main1" id="sidebar-wrapper">
+        <div class="sidebar-heading  py-4 primary-text fs-4 fw-bold  border-bottom" (click)="dashboard()"_>
+            <i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</div> <br>
+                <div class="list-group list-group-flush my-3">
+                    
+                    <a  class="list-group-item list-group-item-action  second-text fw-bold" (click)="dashservices()">
+                        <i class="fa fa-pie-chart" aria-hidden="true" ></i> Services</a> <br><br>
+                   
+                    <a  class="list-group-item list-group-item-action second-text fw-bold" (click)="dashjobbeurs()">
+                        <i class="fa fa-users" aria-hidden="true" ></i> Jobbeurs</a> <br> <br>
+                    <a class="list-group-item list-group-item-action  second-text fw-bold" (click)="dashclients()">
+                        <i class="fa fa-users" aria-hidden="true" ></i> Clients</a> <br> <br>
+                    <a  class="list-group-item list-group-item-action  second-text fw-bold"  (click)="dashcontact()">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> Contact</a> <br> <br>
+                  
+                    <a class="list-group-item list-group-item-action  second-text fw-bold" (click)="logout()">
+                        <i class="fa fa-power-off" aria-hidden="true"></i> Déconnexion</a>
+                </div>
+            </div>
+            
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                <h2 class="fs-2 m-0"> Contact</h2>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+        </nav>
+
+<div class="container-fluid px-4">
+    <div class="main">
+ <br><br>
+    <h3 class="fs-4 mb-3">Reclamation </h3>
+    
+        <table class="table  rounded1 shadow-sm  table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Télephone</th>
+                    <th scope="col">Message </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let contact of contacts">
+                    <td>{{contact.name}}</td>
+                    <td>{{contact.email}}</td>
+                    <td>{{contact.phone}}</td>
+                    <td>{{contact.message}}</td>
+                    
+                </tr>               
+               
+            </tbody>
+        </table>
+    </div>
+</div>
